@@ -133,7 +133,7 @@ def main():
                 <img class="info-icon" src="https://cdn-icons-png.flaticon.com/512/542/542638.png"/>
                 <div class="info-text">
                     <div class="info-label">EMAIL</div>
-                    <div class="info-value">vishnupriyapolamreddy@email.com</div>
+                    <div class="info-value">vishnupriyapolamreddy@gmail.com</div>
                 </div>
             </div>
             <div class="info-block">
