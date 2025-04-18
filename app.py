@@ -367,12 +367,12 @@ def main():
             components.html(html, height=1000, scrolling=True)
 
         with tab5:
-            with open("resume.pdf", "rb") as resume_file:
-                resume_data = resume_file.read()
+            with open("Resume.pdf", "rb") as Resume_file:
+                Resume_data = Resume_file.read()
             st.download_button(
                 label="Download Resume",
-                data=resume_data,
-                file_name="resume.pdf",
+                data=Resume_data,
+                file_name="Resume.pdf",
                 mime="application/pdf"
             )
 
