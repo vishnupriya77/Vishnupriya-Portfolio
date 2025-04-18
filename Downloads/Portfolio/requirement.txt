@@ -1,0 +1,7 @@
+streamlit
+scikit-learn
+openai
+numpy
+pandas
+requests
+streamlit-option-menu
