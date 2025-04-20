@@ -4,6 +4,7 @@ import base64
 import streamlit.components.v1 as components
 from question_set import var # type: ignore
 from predefined_answers import predefined_response, all_projects, all_certifications, all_qualifications, all_experience  # type: ignore
+
 def image_to_base64(image_path):
     with open(image_path, "rb") as img_file:
         return base64.b64encode(img_file.read()).decode()
@@ -366,11 +367,11 @@ def main():
             components.html(html, height=1000, scrolling=True)
 
         with tab5:
-            with open("Resume.pdf", "rb") as Resume_file:
-                Resume_data = Resume_file.read()
+            with open("Resume.pdf", "rb") as resume_file:
+                resume_data = resume_file.read()
             st.download_button(
                 label="Download Resume",
-                data=Resume_data,
+                data=resume_data,
                 file_name="Resume.pdf",
                 mime="application/pdf"
             )
@@ -399,6 +400,7 @@ def generate_response(query):
             return predefined_response[keyword]
 
     return "I'm not sure about that, but you can ask Vishnupriya directly!"
+
 
 
 
