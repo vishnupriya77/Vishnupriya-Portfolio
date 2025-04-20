@@ -205,7 +205,7 @@ def main():
     <div class="chat-container" id="vishbot-container">
         <div class="chat-title">Ask VishBot anything about me!</div>
         <div class="ai-response">
-            Hi! I'm <strong>VishBot</strong>, Vishnupriya's AI assistant. Ask me anything about her skills, experience, projects, or visa status! 🚀
+            Hi! I'm <strong>VishBot</strong>, Vishnupriya's AI assistant. Ask me anything about her skills, experience, projects, qualifications or visa status! 🚀
         </div>
     </div>
 """, unsafe_allow_html=True)
