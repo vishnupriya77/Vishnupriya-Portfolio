@@ -3,8 +3,7 @@ from PIL import Image
 import base64
 import streamlit.components.v1 as components
 from question_set import var # type: ignore
-from predefined_answers import predefined_response  # type: ignore # make sure it's at the top with other imports
-
+from predefined_answers import predefined_response, all_projects, all_certifications, all_qualifications, all_experience  # type: ignore
 def image_to_base64(image_path):
     with open(image_path, "rb") as img_file:
         return base64.b64encode(img_file.read()).decode()
@@ -379,15 +378,25 @@ def main():
 def generate_response(query):
     query_lower = query.strip().lower()
 
-    # Check predefined response keywords first
-    for keyword in predefined_response: # type: ignore
-        if keyword in query_lower:
-            return predefined_response[keyword] # type: ignore
+    # Keyword-based detection for predefined answers
+    if "project" in query_lower:
+        return all_projects
+    elif "certification" in query_lower or "certificstion" in query_lower or "certs" in query_lower:
+        return all_certifications
+    elif "qualification" in query_lower or "education" in query_lower or "degree" in query_lower:
+        return all_qualifications
+    elif "experience" in query_lower or "work" in query_lower or "internship" in query_lower:
+        return all_experience
 
-    # Fall back to stored_questions.py if nothing matches
+    # Check exact match from var (custom questions)
     for stored_q in var:
         if stored_q.strip().lower() == query_lower:
             return var[stored_q]
+
+    # Check loose keyword-based matches in predefined_response
+    for keyword in predefined_response:
+        if keyword in query_lower:
+            return predefined_response[keyword]
 
     return "I'm not sure about that, but you can ask Vishnupriya directly!"
 
