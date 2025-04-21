@@ -170,8 +170,11 @@ def main():
         </div>
         """, unsafe_allow_html=True)
         st.markdown("""
-        <p style='font-size:14px; color:#ccc; margin-top:20px;'>📱 If you're viewing this on mobile through LinkedIn, you may get the best experience by opening in your mobile browser instead.</p>
+        <p style='font-size:14px; font-weight:bold; color:black; margin-top:20px;'>
+        📱 If you're viewing this on LinkedIn, you may get the best experience by opening in your mobile browser instead.
+        </p>
         """, unsafe_allow_html=True)
+
 
     with col2:
         tab1, tab2, tab3, tab4, tab5 = st.tabs(["\U0001F464 About Me", "\U0001F6E0 Skills", "\U0001F4BC Experience", "\U0001F4C1 Projects", "\U0001F4C4 Resume"])
