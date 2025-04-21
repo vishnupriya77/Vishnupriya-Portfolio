@@ -160,8 +160,13 @@ def main():
         st.markdown(contact_html, unsafe_allow_html=True)
         st.markdown("""
 <style>
+@media (min-width: 768px) {
+    .mobile-warning {
+        display: none;
+    }
+}
 .mobile-warning {
-    font-size: 14px;
+    font-size: 10px;
     font-weight: bold;
     color: white;
     background-color: #111;
