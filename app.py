@@ -68,18 +68,16 @@ def main():
     }
     .info-wrapper {
         margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
         padding-left: 30px;
-        display: grid;
-        row-gap: 16px;
     }
-
     .info-block {
-        display: grid;
-        grid-template-columns: auto 1fr;
-        align-items: start;
-        column-gap: 12px;
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 12px;
     }
-
     .info-icon {
         width: 22px;
         height: 22px;
@@ -109,14 +107,11 @@ def main():
         width: 28px;
         filter: brightness(0) invert(1);
     }
-   
-
     </style>
     """
     
     st.markdown(custom_css, unsafe_allow_html=True)
     
-
     col1, col2 = st.columns([1, 3], gap="large")
 
     with col1:
