@@ -159,17 +159,6 @@ def main():
         '''
         st.markdown("""
         <style>
-        .mobile-warning {
-            font-size: 14px;
-            font-weight: bold;
-            color: white;
-            background-color: #111;
-            padding: 12px 16px;
-            border-radius: 8px;
-            margin-top: 20px;
-            text-align: center;
-            border: 1px solid #444;
-        }
         @media (prefers-color-scheme: light) {
             .mobile-warning {
                 color: #111;
