@@ -66,10 +66,6 @@ def main():
         margin-right: auto;
         transform: translateX(-8px);  /* move slightly left */
     }
-
-
-
-    }
     .info-wrapper {
         margin-top: 30px;
         padding-left: 30px;
