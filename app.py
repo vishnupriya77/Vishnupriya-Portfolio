@@ -72,16 +72,18 @@ def main():
     }
     .info-wrapper {
         margin-top: 30px;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
         padding-left: 30px;
+        display: grid;
+        row-gap: 16px;
     }
+
     .info-block {
-        display: flex;
-        align-items: flex-start;
-        margin-bottom: 12px;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        align-items: start;
+        column-gap: 12px;
     }
+
     .info-icon {
         width: 22px;
         height: 22px;
