@@ -167,18 +167,15 @@ def main():
     }
 }
 .mobile-warning {
-    font-size: 10px;
+    font-size: 14px;
     font-weight: bold;
     color: white;
     background-color: #111;
-    padding: 8px 12px;
-    border-radius: 6px;
-    margin-top: 40px; /* Increased margin to push it down */
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 20px;
     text-align: center;
     border: 1px solid #444;
-    max-width: 80%;
-    margin-left: auto;
-    margin-right: auto;
 }
 @media (prefers-color-scheme: light) {
     .mobile-warning {
@@ -190,9 +187,10 @@ def main():
 </style>
 
 <p class="mobile-warning">
-📱 For the best experience, open this in your mobile browser if you're viewing from LinkedIn.
+📱 If you're viewing this on LinkedIn, open it in your mobile browser for the best experience.
 </p>
 """, unsafe_allow_html=True)
+
 
 
 
