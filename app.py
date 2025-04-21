@@ -161,6 +161,11 @@ def main():
         
         st.markdown("""
 <style>
+@media (min-width: 768px) {
+    .mobile-warning {
+        display: none;
+    }
+}
 .mobile-warning {
     font-size: 10px;
     font-weight: bold;
