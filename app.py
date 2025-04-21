@@ -109,9 +109,36 @@ def main():
         width: 28px;
         filter: brightness(0) invert(1);
     }
+    @media (max-width: 768px) {
+    .info-wrapper, .social-icons {
+        display: none !important;
+    }
+    .mobile-contact {
+        display: block !important;
+    }
+}
+.mobile-contact {
+    display: none;
+    margin-top: 30px;
+    font-size: 15px;
+    color: white;
+    padding-left: 30px;
+}
+.mobile-contact p {
+    margin: 6px 0;
+}
+.mobile-contact a {
+    font-size: 16px;
+    color: #ffcc70;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
     </style>
     """
+    
     st.markdown(custom_css, unsafe_allow_html=True)
+    
 
     col1, col2 = st.columns([1, 3], gap="large")
 
@@ -159,14 +186,19 @@ def main():
         </div>
         '''
         st.markdown(contact_html, unsafe_allow_html=True)
-        st.markdown("""
-        <div style="display: none;">
-            📧 **Email:** vishnupriyapolamreddy@email.com  
-            📞 **Phone:** +1 (469) 686-0078  
-            📍 **Location:** Dallas, Texas  
-            🔗 [LinkedIn](https://www.linkedin.com/in/vishnupriya-polamreddy/) | 💻 [GitHub](https://github.com/vishnupriya77)
+        mobile_contact_html = '''
+        <div class="mobile-contact">
+            <p><strong>Email:</strong> vishnupriyapolamreddy@gmail.com</p>
+            <p><strong>Phone:</strong> +1 (469) 686-0078</p>
+            <p><strong>Location:</strong> Dallas, Texas</p>
+            <p>
+                <a href="https://www.linkedin.com/in/vishnupriya-polamreddy/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/vishnupriya77" target="_blank">GitHub</a>
+            </p>
         </div>
-        """, unsafe_allow_html=True)
+        '''
+        st.markdown(mobile_contact_html, unsafe_allow_html=True)
+
         st.markdown("""
         <style>
         @media (min-width: 768px) {
@@ -177,7 +209,7 @@ def main():
         </style>
 
         <p class="mobile-warning" style='font-size:14px; font-weight:bold; color:black; margin-top:20px;'>
-        📱 If you're viewing this on LinkedIn, you may get the best experience by opening in your mobile browser instead.
+        📱 If you're viewing this in your mobile on LinkedIn, you may get the best experience by opening in your mobile browser instead.
         </p>
         """, unsafe_allow_html=True)
 
