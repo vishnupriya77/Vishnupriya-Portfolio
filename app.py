@@ -161,6 +161,14 @@ def main():
         </div>
         '''
         st.markdown(contact_html, unsafe_allow_html=True)
+        st.markdown("""
+        <div style="display: none;">
+            📧 **Email:** vishnupriyapolamreddy@email.com  
+            📞 **Phone:** +1 (469) 686-0078  
+            📍 **Location:** Dallas, Texas  
+            🔗 [LinkedIn](https://www.linkedin.com/in/vishnupriya-polamreddy/) | 💻 [GitHub](https://github.com/vishnupriya77)
+        </div>
+        """, unsafe_allow_html=True)
 
     with col2:
         tab1, tab2, tab3, tab4, tab5 = st.tabs(["\U0001F464 About Me", "\U0001F6E0 Skills", "\U0001F4BC Experience", "\U0001F4C1 Projects", "\U0001F4C4 Resume"])
