@@ -158,23 +158,22 @@ def main():
         </div>
         '''
         st.markdown(contact_html, unsafe_allow_html=True)
+        
         st.markdown("""
 <style>
-@media (min-width: 768px) {
-    .mobile-warning {
-        display: none;
-    }
-}
 .mobile-warning {
     font-size: 10px;
     font-weight: bold;
     color: white;
     background-color: #111;
-    padding: 12px 16px;
-    border-radius: 8px;
-    margin-top: 20px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    margin-top: 40px; /* Increased margin to push it down */
     text-align: center;
     border: 1px solid #444;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 @media (prefers-color-scheme: light) {
     .mobile-warning {
@@ -186,9 +185,10 @@ def main():
 </style>
 
 <p class="mobile-warning">
-📱 If you're viewing this on LinkedIn, open it in your mobile browser for the best experience.
+📱 For the best experience, open this in your mobile browser if you're viewing from LinkedIn.
 </p>
 """, unsafe_allow_html=True)
+
 
 
 
