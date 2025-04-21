@@ -160,42 +160,36 @@ def main():
         st.markdown(contact_html, unsafe_allow_html=True)
         
         st.markdown("""
-<style>
-@media (min-width: 768px) {
-    .mobile-warning {
-        display: none;
-    }
-}
-.mobile-warning {
-    font-size: 14px;
-    font-weight: bold;
-    color: white;
-    background-color: #111;
-    padding: 12px 16px;
-    border-radius: 8px;
-    margin-top: 20px;
-    text-align: center;
-    border: 1px solid #444;
-}
-@media (prefers-color-scheme: light) {
-    .mobile-warning {
-        color: #111;
-        background-color: #f0f0f0;
-        border: 1px solid #ccc;
-    }
-}
-</style>
+        <style>
+        @media (min-width: 768px) {
+            .mobile-warning {
+                display: none;
+            }
+        }
+        .mobile-warning {
+            font-size: 14px;
+            font-weight: bold;
+            color: white;
+            background-color: #111;
+            padding: 12px 16px;
+            border-radius: 8px;
+            margin-top: 40px;
+            text-align: center;
+            border: 1px solid #444;
+        }
+        @media (prefers-color-scheme: light) {
+            .mobile-warning {
+                color: #111;
+                background-color: #f0f0f0;
+                border: 1px solid #ccc;
+            }
+        }
+        </style>
 
-<p class="mobile-warning">
-📱 If you're viewing this on LinkedIn, open it in your mobile browser for the best experience.
-</p>
-""", unsafe_allow_html=True)
-
-
-
-
-
-
+        <p class="mobile-warning">
+        📱 If you're viewing this on LinkedIn, open it in your mobile browser for the best experience.
+        </p>
+        """, unsafe_allow_html=True)
 
     with col2:
         tab1, tab2, tab3, tab4, tab5 = st.tabs(["\U0001F464 About Me", "\U0001F6E0 Skills", "\U0001F4BC Experience", "\U0001F4C1 Projects", "\U0001F4C4 Resume"])
