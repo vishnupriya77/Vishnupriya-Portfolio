@@ -53,7 +53,9 @@ all_qualifications = '''<strong>1) Master of Science in Information Computer Sci
 
 all_experience = '''Below is my work experience history:
 Data Analyst Intern – Hudson’s Bay Company (Feb 2023 – Jun 2023)
-   - Managed SQL databases with 99.9% accuracy
-   - Built dashboards in Power BI and Excel (30% improved reporting)
-   - Automated data cleaning using Python (reduced effort by 40%)
+- Managed and maintained SQL databases, ensuring 99.9% data accuracy through validation and quality checks
+- Conducted exploratory data analysis (EDA) on 100K+ transactions, uncovering trends that improved decision-making for marketing strategies
+- Designed interactive dashboards in Power BI and Excel, enhancing reporting efficiency by 30% and enabling real-time business insights
+- Automated data cleaning and preprocessing scripts in Python, reducing manual effort by 40% and improving workflow efficiency
+
 '''
