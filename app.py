@@ -170,10 +170,19 @@ def main():
         </div>
         """, unsafe_allow_html=True)
         st.markdown("""
-        <p style='font-size:14px; font-weight:bold; color:black; margin-top:20px;'>
+        <style>
+        @media (min-width: 768px) {
+            .mobile-warning {
+                display: none;
+            }
+        }
+        </style>
+
+        <p class="mobile-warning" style='font-size:14px; font-weight:bold; color:black; margin-top:20px;'>
         📱 If you're viewing this on LinkedIn, you may get the best experience by opening in your mobile browser instead.
         </p>
         """, unsafe_allow_html=True)
+
 
 
     with col2:
