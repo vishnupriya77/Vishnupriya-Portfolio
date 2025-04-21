@@ -158,7 +158,7 @@ def main():
         </div>
         '''
         st.markdown(contact_html, unsafe_allow_html=True)
-        st.markdown(mobile_prompt, unsafe_allow_html=True)
+        st.markdown("<br><br>", unsafe_allow_html=True)
         st.markdown("""
         <style>
         @media (min-width: 768px) {
