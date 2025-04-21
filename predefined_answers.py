@@ -18,19 +18,29 @@ predefined_response = {
 all_projects = f'''Sure! Here are some of my projects:
 
 - Brain Tumor Detection Using Deep Learning (Jan 2023 – Jul 2023):
-  - Designed a CNN-based model using TensorFlow & Keras for brain tumor detection from MRI scans.
-  - Achieved 92% accuracy; published results at ICIOT.
-  - Preprocessed data with resizing, normalization, and augmentation.
+  - Designed and implemented a deep learning model utilizing Convolutional Neural Networks (CNNs) for the detection of brain tumors in MRI scans
+  - Employed TensorFlow and Keras to automate the classification of brain tumors, enhancing diagnostic speed and accuracy 
+  - Achieved an accuracy rate of 92% on the Kaggle Brain MRI dataset through hyperparameter optimization and the application of dropout regularization 
+  - Conducted data preprocessing including image resizing, normalization, and augmentation to improve model robustness and generalization
+  - Published findings in the International Conference on Internet of Things (ICIOT), highlighting the model's contribution to AI-powered medical diagnostics
+
 
 - Travel Advisor System (Aug 2025 – Dec 2025):
-  - Built using React (frontend) and Flask (backend).
-  - Implemented NCF + KNN algorithms for personalized recommendations.
-  - Achieved 95% accuracy in recommendations using hybrid filtering.
+  - Engineered a Personalized Travel Recommendation System leveraging React, Flask, Python, and advanced Machine Learning algorithms 
+  - Developed a responsive, user-centric front-end using React to display personalized recommendations for hotels, restaurants, and attractions, ensuring an intuitive and seamless user interface
+  - Architected the back end with Flask, efficiently managing user requests, processing inputs, and facilitating communication with the recommendation engine
+  - Implemented Neural Collaborative Filtering (NCF) and K-Nearest Neighbors (KNN) algorithms to generate tailored recommendations based on individual user preferences 
+  - Leveraged a hybrid approach combining collaborative filtering and content-based filtering to optimize the recommendation engine for high-precision results, achieving an accuracy rate of 95% in personalized recommendations 
+  - Exploited the front-end to display results dynamically, providing users with real-time, AI-driven travel planning insights
+
 
 - Library Management System (Jan 2025 – May 2025):
-  - Developed in Java, HTML, CSS, with SQL backend.
-  - Integrated advanced search, check-out/return functionality.
-  - Focused on data integrity and usability enhancements.
+  - Constructed the front-end of a Library Management System using HTML, CSS, and Java, creating an intuitive and user-friendly interface
+  - Utilized SQL to manage critical components such as book catalogs, member information, and transaction workflows, ensuring data integrity and efficient operations 
+  - Integrated advanced search capabilities, enabling users to search for books by title, author, and genre, improving discovery and accessibility 
+  - Streamlined essential tasks, including book checkouts, returns, and availability updates, optimizing library workflows and user interactions
+  - Ensured smooth communication between the front-end interface and the back-end database, enhancing system performance and overall user experience
+
 
 Let me know if you need more details!
 '''
@@ -44,15 +54,15 @@ all_certifications = f'''Sure! Here are some of my certifications:
 all_qualifications = '''<strong>1) Master of Science in Information Computer Science</strong> – The University of Texas at Dallas (Aug 2023 – May 2025)<br>
 - GPA: 3.45/4<br>
 - Specialization: Data Science<br>
-- Relevant Courses: Machine Learning, Computer Vision, Web Programming, Big Data & Analytics<br><br>
+- Relevant Courses: Database Design, Design and Analysis of Algorithms, Statistical Methods for Data Science, Big Data & Analytics, Network Security, Information Retrieval, Computer Vision, Secure Software Development, Machine Learning, Artificial Intelligence, Web Programming Languages<br><br>
 
 <strong>2) Bachelor of Technology in Computer Science & Engineering</strong> – SRM University (Jul 2019 – Aug 2023)<br>
 - GPA: 3.6/4<br>
-- Relevant Courses: DBMS, Operating Systems, Data Mining, Compiler Design
+- Relevant Courses: C Programming, Data Structures and Algorithms, Object Oriented Design and Programming, Operating Systems, Computer Networks, Compiler Design, Database Management Systems, Data Mining and Analytics
 '''
 
-all_experience = '''Below is my work experience history:
-Data Analyst Intern – Hudson’s Bay Company (Feb 2023 – Jun 2023)
+all_experience = '''Below is my work experience:<br>
+Data Analyst Intern – Hudson’s Bay Company (Feb 2023 – Jun 2023)<br>
 - Managed and maintained SQL databases, ensuring 99.9% data accuracy through validation and quality checks
 - Conducted exploratory data analysis (EDA) on 100K+ transactions, uncovering trends that improved decision-making for marketing strategies
 - Designed interactive dashboards in Power BI and Excel, enhancing reporting efficiency by 30% and enabling real-time business insights
