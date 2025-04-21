@@ -411,9 +411,9 @@ def generate_response(query):
     # Keyword-based detection for predefined answers
     if "project" in query_lower:
         return all_projects
-    elif "certification" in query_lower or "certificstion" in query_lower or "certs" in query_lower:
+    elif "certification" in query_lower or "certificstion" in query_lower or "certs" in query_lower or "certificate" in query_lower:
         return all_certifications
-    elif "qualification" in query_lower or "education" in query_lower or "degree" in query_lower:
+    elif "qualification" in query_lower or "education" in query_lower or "degree" in query_lower or "academic" in query_lower or "academy" in query_lower:
         return all_qualifications
     elif "experience" in query_lower or "work" in query_lower or "internship" in query_lower:
         return all_experience
